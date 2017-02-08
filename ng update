@@ -1,0 +1,106 @@
+app.component.css
+\ No newline at end of file
+
+index:
+<title>AhadAngularChat</title>
+
+main.ts
+-import './polyfills.ts';
+
+--- /Users/bk/Coding/chatAngular/angular-cli.json
++++ /Users/bk/Coding/chatAngular/angular-cli.json
+@@ -1,8 +1,8 @@
+ {
+   "project": {
+-    "version": "1.0.0-beta.26",
+-    "name": "chat-angular"
++    "version": "1.0.0-beta.30",
++    "name": "ahad-angular-chat"
+   },
+   "apps": [
+     {
+       "root": "src",
+@@ -12,22 +12,16 @@
+         "favicon.ico"
+       ],
+       "index": "index.html",
+       "main": "main.ts",
++      "polyfills": "polyfills.ts",
+       "test": "test.ts",
+       "tsconfig": "tsconfig.json",
+       "prefix": "app",
+-      "mobile": false,
+       "styles": [
+-        "../node_modules/bootstrap/dist/css/bootstrap.css",
+         "styles.css"
+       ],
+-      "scripts": [
+-        "../node_modules/socket.io-client/dist/socket.io.js",
+-        "../node_modules/jquery/dist/jquery.js",
+-        "../node_modules/tether/dist/js/tether.js",
+-        "../node_modules/bootstrap/dist/js/bootstrap.js"
+-      ],
++      "scripts": [],
+       "environments": {
+         "source": "environments/environment.ts",
+         "dev": "environments/environment.ts",
+         "prod": "environments/environment.prod.ts"
+@@ -38,8 +32,18 @@
+     "protractor": {
+       "config": "./protractor.conf.js"
+     }
+   },
++  "lint": [
++    {
++      "files": "src/**/*.ts",
++      "project": "src/tsconfig.json"
++    },
++    {
++      "files": "e2e/**/*.ts",
++      "project": "e2e/tsconfig.json"
++    }
++  ],
+   "test": {
+     "karma": {
+       "config": "./karma.conf.js"
+     }
+
+app.e2e
+
+--- /Users/bk/Coding/chatAngular/e2e/app.e2e-spec.ts
++++ /Users/bk/Coding/chatAngular/e2e/app.e2e-spec.ts
+@@ -1,11 +1,11 @@
+-import { ChatAngularPage } from './app.po';
++import { AhadAngularChatPage } from './app.po';
+
+-describe('chat-angular App', function() {
+-  let page: ChatAngularPage;
++describe('ahad-angular-chat App', function() {
++  let page: AhadAngularChatPage;
+
+ beforeEach(() => {
+-    page = new ChatAngularPage();
++    page = new AhadAngularChatPage();
+ });
+
+ it('should display message saying app works', () => {
+   page.navigateTo();
+
+
+   app.po.ts
+   ===================================================================
+   --- /Users/bk/Coding/chatAngular/e2e/app.po.ts
+   +++ /Users/bk/Coding/chatAngular/e2e/app.po.ts
+   @@ -1,7 +1,7 @@
+    import { browser, element, by } from 'protractor';
+
+   -export class ChatAngularPage {
+   +export class AhadAngularChatPage {
+      navigateTo() {
+        return browser.get('/');
+      }
+
+
+package.json
+
++    "@angular/cli": "1.0.0-beta.30",

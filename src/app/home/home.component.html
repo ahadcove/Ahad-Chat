@@ -1,0 +1,26 @@
+<!-- <div class="jumbotron"> -->
+<h1 class="head animated bounce">Welcome Sign In</h1>
+<!-- </div> -->
+  <div id="signArea" class="row">
+
+    <div class="col-sm-6 formSign animated zoomInDown">
+      <form id = "signForm">
+        <div class="form-group">
+          <br />
+          <label>Enter Name</label>
+          <input type="text" required max=6 class="form-control" id ="name" [(ngModel)]="name" name="name" />
+          <!-- <label>Enter Room</label> -->
+
+          <div class="form-group">
+           <label for="room">Pick Room</label>
+           <select class="form-control input-small" id="room"  [(ngModel)]="room" name="room">
+             <option *ngFor="let item of roomList" [value]=item>{{item}}</option>
+           </select>
+         </div>
+
+          <!-- <input type="text" required max=6 class="form-control" id ="room" [(ngModel)]="room" name="room" /> -->
+          <input type="submit" class="btn submit btn-primary animated infinite pulse" id="click" (click)="click()" value="Submit" />
+        </div>
+      </form>
+    </div>
+  </div>

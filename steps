@@ -1,0 +1,9 @@
+npm install:
+socket.io, socket.io-client, express
+
+Set up app.js, put it where you want
+assign package.json main to app.js
+
+typings socket.io-client
+typings install dt~socket.io-client --save --global
+or npm install @types/socket.io-client --save-dev  ?
