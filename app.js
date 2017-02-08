@@ -6,13 +6,13 @@ var server = require('http').Server(app);
 var io = require('socket.io').listen(server);
 
 //Start server - env.port will get whatever heroku or we sends back
-server.listen(process.env.PORT || 2400);
+server.listen(process.env.PORT || 8080);
 
 console.log("Server Started");
 
 //Default Route
 app.get('/',(req, res)=>{
-  res.sendFile(__dirname+'/dist/index.html');
+  res.sendFile(__dirname+'/src/index.html');
 })
 
 //Static Folder
