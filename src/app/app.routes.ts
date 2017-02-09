@@ -10,8 +10,8 @@ import { HomeComponent } from './home/home.component';
 import { MessageComponent } from './message/message.component';
 
 const routes: Routes = [
-  { path: '', redirectTo:'home',pathMatch:'full' },
-  { path: 'home', component:HomeComponent },
+  // { path: '', redirectTo:'home',pathMatch:'full' },
+  { path: '', component:HomeComponent },
   { path: 'message', component:MessageComponent }
 ];
 
@@ -19,7 +19,7 @@ const routes: Routes = [
 @NgModule({
   imports: [
     BrowserModule,
-    RouterModule.forRoot( routes, { useHash: true } ),
+    RouterModule.forRoot( routes, { useHash: false } ),
   ],
   providers: [ MainService ],
   exports: [

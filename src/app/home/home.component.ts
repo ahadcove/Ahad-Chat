@@ -30,7 +30,7 @@ export class HomeComponent implements OnInit {
     // setInterval(_=>{if(this.main.done==true){this.router.navigate(['message'])}},2000);
   }
   click(){
-    $('#click').prop("disabled",true);
+    // $('#click').prop("disabled",true);
     this.main.sign({name:this.name,room:this.room});
     console.log(this.name);
     // this.main.navi();

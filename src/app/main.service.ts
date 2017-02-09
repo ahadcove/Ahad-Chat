@@ -14,7 +14,7 @@ declare var $: any;
 
 @Injectable()
 export class MainService {
-  private port='http://localhost:2400';
+  // private port='http://localhost:8080';
   private socket;
   // public userList;
   initUser;
@@ -34,13 +34,15 @@ export class MainService {
   chatList: Subject<any> = new Subject<any>();
   chatList$ = this.chatList.asObservable();
 
-  constructor(private router:Router) {
-    this.socket= io(this.port);
+  constructor(private router: Router) {
+    // this.socket= io(this.port);
+    this.socket = io();
     this.start();
   }
 
 //Sign In
   sign(dat){
+    console.log('attempting to sign in');
     this.socket.emit('new user', dat, (data)=>{
       if(data==true){
           this.myUsername=dat.name; this.myRoom=dat.room
