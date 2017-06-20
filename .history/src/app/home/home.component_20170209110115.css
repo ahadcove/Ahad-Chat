@@ -1,0 +1,83 @@
+.jumbotron {
+    background: none;
+}
+
+.formSign {
+    padding: 5px 15px 5px 15px;
+    /*height:40vh;*/
+    /*width:30vw;*/
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#b0d4e3+0,88bacf+100;Grey+3D+%233 */
+    background: #b0d4e3;
+    /* Old browsers */
+    background: -moz-linear-gradient(top, #b0d4e3 0%, #88bacf 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #b0d4e3 0%, #88bacf 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #b0d4e3 0%, #88bacf 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#b0d4e3', endColorstr='#88bacf', GradientType=0);
+    /* IE6-9 */
+    border: double white 6px;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 1.2em;
+    margin: 0 auto;
+    font-family: 'Pangolin', cursive;
+    width: 100vw;
+}
+
+input,
+label {
+    /*text-align: center;*/
+    font-size: 1.2em;
+}
+
+label {
+    color: white;
+}
+
+input {
+    margin-bottom: 5%;
+}
+
+.input-small {
+    margin-bottom: 5%;
+    font-size: .6em;
+}
+
+#click {
+    border: solid white 2px;
+    background: #648880;
+    /*height:45px;*/
+    /*width:100px;*/
+    border-radius: 15px;
+    margin: 0 auto;
+    font-size: .7em;
+}
+
+@media screen and (min-width: 768px) {
+    .formSign {
+        padding: 10px 25px 10px 25px;
+        width: 60vw;
+        font-size: 1.4em;
+    }
+    #click {
+        font-size: .9em;
+        height: 45px;
+        width: 100px;
+    }
+    input,
+    label {
+        font-size: 1.4em;
+    }
+    label {}
+    input {
+        margin-bottom: 10%;
+    }
+    .input-small {
+        margin-bottom: 10%;
+        font-size: 1em;
+    }
+}
+
+@media screen and (min-width: 768px) {}

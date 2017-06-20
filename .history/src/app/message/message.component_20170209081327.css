@@ -1,0 +1,261 @@
+.head {
+    font-size: 20px;
+    margin: 10px 0 5px 0;
+}
+
+.msgContain {
+    /*background:rgb(157, 175, 194);*/
+    background: #cedce7;
+    /* Old browsers */
+    background: -moz-linear-gradient(top, #cedce7 0%, #78929e 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #cedce7 0%, #78929e 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #cedce7 0%, #78929e 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#cedce7', endColorstr='#78929e', GradientType=0);
+    /* IE6-9 */
+    /*white-space: nowrap;*/
+    font-family: 'Sansita', sans-serif;
+    overflow: scroll;
+    border: ridge #b3bead 6px;
+    position: relative;
+    margin: 0 20px 20px 20px;
+    padding: 10px;
+    height: 88vh;
+}
+
+.msgDisp {
+    vertical-align: top;
+    border: outset rgba(137, 142, 142, 0.48) 6px;
+    overflow-y: scroll;
+    overflow-x: scroll;
+    height: 60vh;
+    width: 300px;
+    /*min-width: 100px;*/
+    /*float:left;*/
+    display: inline-block;
+    /*white-space: normal;*/
+    background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.65) 40%, rgba(0, 0, 0, 0.65) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.65) 40%, rgba(0, 0, 0, 0.65) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.65) 40%, rgba(0, 0, 0, 0.65) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#a6000000', GradientType=0);
+    /* IE6-9 */
+    padding: 10px;
+    color: rgb(30, 80, 71);
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    margin-right: 10px;
+    font-size: 1.6em;
+    /*display: inline;*/
+    word-break: break-word;
+    /*word-break:normal;*/
+}
+
+.msgList {
+    margin: 5px 5px 10px 5px;
+    border-radius: 10px;
+}
+
+.msgDisp strong {}
+
+.sideContain {
+    vertical-align: top;
+    /*float:right;*/
+    display: inline-block;
+    text-align: center;
+    width: 120px;
+    border: outset rgba(59, 60, 60, 0.59) 6px;
+    border-radius: 10px;
+    /*position:absolute;*/
+    right: 0px;
+    /*top:0px;*/
+    background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.65) 40%, rgba(0, 0, 0, 0.65) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.65) 40%, rgba(0, 0, 0, 0.65) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.65) 40%, rgba(0, 0, 0, 0.65) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#a6000000', GradientType=0);
+    /* IE6-9 */
+    height: 60.5vh;
+    overflow: hidden;
+    overflow: scroll;
+    margin-left: 10px;
+    /*margin:5px;*/
+    padding: 3px;
+}
+
+.sideH {
+    color: white;
+    font-size: 1.5em;
+    margin: 4px 0px 10px 0;
+}
+
+.sideUl {
+    overflow: scroll;
+    font-size: 10px;
+    color: rgb(70, 103, 93);
+    font-family: 'Lato', sans-serif;
+}
+
+.sideL {
+    /*text-align: center;*/
+    width: 110px;
+    margin: 0 auto;
+    text-decoration: none;
+    border-radius: 10px;
+    cursor: pointer;
+    overflow: scroll;
+    padding: 0 auto;
+    font-size: 1.8em;
+    margin-bottom: 5px;
+}
+
+#messageForm {
+    /*font-size:.8em;*/
+    margin-top: 8px;
+}
+
+#messageForm label {
+    /*font-size:1.4em;*/
+}
+
+#message {
+    font-size: 1.6em;
+    border: outset rgba(108, 102, 102, 0.62) 2px;
+    /*display:inline;*/
+}
+
+.sendBtn {
+    float: right;
+    /*text-align: right;*/
+    height: 40px;
+    font-size: 20px;
+    color: white;
+    border-radius: 10%;
+    margin-top: 10px;
+    border: outset rgb(81, 105, 112) 2px;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#606c88+0,3f4c6b+100;Grey+3D+%232 */
+    background: rgb(96, 108, 136);
+    /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(96, 108, 136, 1) 0%, rgba(63, 76, 107, 1) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(96, 108, 136, 1) 0%, rgba(63, 76, 107, 1) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(96, 108, 136, 1) 0%, rgba(63, 76, 107, 1) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#606c88', endColorstr='#3f4c6b', GradientType=0);
+    /* IE6-9 */
+    /*width:40px;*/
+}
+
+.chatContain {
+    /*display: none;*/
+    text-align: center;
+    border: ridge #b3bead 6px;
+    /*z-index: 99;*/
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#cedce7+0,78929e+100&0.81+1,0.81+27 */
+    background: -moz-linear-gradient(top, rgba(206, 220, 231, 0.81) 0%, rgba(205, 219, 230, 0.81) 1%, rgba(183, 200, 211, 0.81) 27%, rgba(120, 146, 158, 0.81) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(206, 220, 231, 0.81) 0%, rgba(205, 219, 230, 0.81) 1%, rgba(183, 200, 211, 0.81) 27%, rgba(120, 146, 158, 0.81) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(206, 220, 231, 0.81) 0%, rgba(205, 219, 230, 0.81) 1%, rgba(183, 200, 211, 0.81) 27%, rgba(120, 146, 158, 0.81) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#cfcedce7', endColorstr='#cf78929e', GradientType=0);
+    /* IE6-9 */
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 70vh;
+    width: 65vw;
+    padding: 10px;
+    /*margin: 0;*/
+    /*font-size: 0.8em;*/
+    /*diplay:hidden;*/
+    position: absolute;
+    bottom: 0;
+    right: 6vw;
+    font-family: sans-serif;
+    margin: 0;
+}
+
+.chatHead {
+    text-align: center;
+    color: white;
+    font-size: 3em;
+    text-transform: uppercase;
+    margin: 0px 0 20px 0;
+}
+
+.chatContain label {}
+
+.chatDisp {
+    display: block;
+    height: 32vh;
+    width: 60vw;
+    margin: 0 auto;
+    font-size: 1.2em;
+    border: inset rgba(137, 142, 142, 0.48) 5px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    font-family: 'Lato', sans-serif;
+    background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.65) 40%, rgba(0, 0, 0, 0.65) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.65) 40%, rgba(0, 0, 0, 0.65) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.65) 40%, rgba(0, 0, 0, 0.65) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#a6000000', GradientType=0);
+    /* IE6-9 */
+}
+
+#chat {
+    font-size: 1.2em;
+}
+
+.enterM {
+    font-family: 'Pangolin', cursive;
+    margin-top: 10px;
+    font-size: 2em;
+    color: white;
+}
+
+@media screen and (min-width: 500px) {
+    .msgDisp {
+        width: 65vw;
+    }
+    .sideContain {
+        width: 20vw;
+    }
+    .sideL {
+        width: 16vw;
+    }
+    .sideH {
+        /*font-size: 1.7em;*/
+    }
+    .msgDisp {
+        font-size: 1.8em;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .head {
+        font-size: 50px;
+        margin: 10px 0 20px 0;
+    }
+    .chatContain {
+        width: 45vw;
+    }
+    .chatDisp {
+        width: 40vw;
+    }
+    .sideH {
+        font-size: 2.5em;
+    }
+    .msgDisp {
+        font-size: 2em;
+    }
+}

@@ -7,3 +7,14 @@ assign package.json main to app.js
 typings socket.io-client
 typings install dt~socket.io-client --save --global
 or npm install @types/socket.io-client --save-dev  ?
+
+
+ng build --prod
+
+Set up Heroku
+
+heroku creat app
+* Only push dist and app.js and package.json
+* git add .
+* git commit -m ""
+* git push heroku master

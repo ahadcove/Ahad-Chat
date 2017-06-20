@@ -118,13 +118,13 @@ io.sockets.on('connection', (socket) => {
 
     //Disconnect
     socket.on('disconnect', (data) => {
-
         if (glob) {
             printGlob(1);
             var find = glob.findIndex(x => x.sock == socket.id);
             console.log("Found: " + find);
             if (find >= 0)
-                glob.splice(glob.indexOf(find, 1), 1);
+            // glob.splice(glob.indexOf(find, 1), 1);
+                glob.splice(find, 1);
             printGlob(2);
             console.log("Glob Length is " + glob.length);
             if (glob.length > 0)

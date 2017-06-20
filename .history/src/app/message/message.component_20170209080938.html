@@ -1,0 +1,65 @@
+<!-- <div class="jumbotron"> -->
+<h1 class="head">Welcome to My Chat Room</h1>
+<!-- </div> -->
+
+<div id="messageArea" class="">
+    <!-- Main -->
+    <div class="msgContain">
+        <div class="msgDisp" id="msgDisp">
+            <div *ngFor="let item of messageList" class="msgList list-group-item">
+                <strong>{{item.name}}:&nbsp;</strong> {{item.msg}}
+            </div>
+        </div>
+
+        <!--<div class="fullMenu" id="fullMenu" (click)="clickSide()">
+            <div class="menu"></div>
+            <div class="menu"></div>
+            <div class="menu"></div>
+        </div>-->
+
+        <!-- Side Bar -->
+        <div class="sideContain" id="sideContain">
+            <div class=" ">
+                <h3 class="sideH ">Online Users</h3>
+                <ul class="list-group sideUl " id="users ">
+                    <!-- <li *ngFor="let user of (userList | async) "> -->
+                    <li *ngFor="let user of userList" (click)="chat(user)" id={{user.username}} class="list-group-item sideL ">
+                        {{user.username}}
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Message -->
+        <form id="messageForm ">
+            <div class="form-group ">
+                <label class="enterM ">Enter Message</label>
+                <input type="text " class="form-control " maxlength="60 " id="message " [(ngModel)]="myMessage " name="myMessage " />
+                <button type="submit " class="btn sendBtn " (click)="send() ">Send ></button>
+            </div>
+        </form>
+    </div>
+
+    <!-- chat -->
+    <div class="chatContain " id="chatContain ">
+        <button class="close " (click)="closeChat() ">X</button>
+        <h4 class="chatHead " *ngIf="chatSock!=null ">{{chatSock.username}}</h4>
+
+        <div class="chatDisp " id="chatDisp ">
+            <div *ngFor="let item of chatList " class="msgList list-group-item ">
+                <strong>{{item.senderName}}:&nbsp;</strong> {{item.msg}}
+            </div>
+        </div>
+
+        <form id="chatForm ">
+            <div class="form-group ">
+                <label class="enterM ">Enter Message</label>
+                <input type="text " class="form-control " id="chat " maxlength="60 " [(ngModel)]="chatMsg " name="chatMsg " />
+                <br />
+                <button type="submit " class="btn sendBtn " (click)="sendChat() ">Send ></button>
+            </div>
+        </form>
+
+    </div>
+
+</div>
